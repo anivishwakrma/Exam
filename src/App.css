@@ -1,0 +1,111 @@
+/* Import a classy font (optional) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  background: linear-gradient(145deg, #1c1c1c, #111);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+  border-radius: 20px;
+}
+
+h1 {
+  color: #f9d923;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #f9d92344;
+}
+
+.question-block {
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 5px solid #f9d923;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(249, 217, 35, 0.1);
+}
+
+.question-block p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.option label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #cfcfcf;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.option label:hover {
+  color: #f9d923;
+  text-shadow: 0 0 5px #f9d92333;
+}
+
+input[type="radio"] {
+  accent-color: #f9d923;
+  transform: scale(1.2);
+  margin-right: 10px;
+}
+
+button {
+  background-color: #f9d923;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s, transform 0.2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #ffeb3b;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #f9d92388;
+}
+
+button:disabled {
+  background-color: #555;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 12px;
+  color: #f9d923;
+  font-size: 1.5em;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(249, 217, 35, 0.2);
+}
+
+/* Correct and incorrect options */
+label[style*="green"] {
+  color: #8bc34a !important;
+  font-weight: bold;
+}
+
+label[style*="red"] {
+  color: #e57373 !important;
+}
